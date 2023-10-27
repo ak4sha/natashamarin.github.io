@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tp integrador</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> 
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header> 
+        <nav id="navBar"  class="navbar navbar-expand-lg navbar-dark custom-bg">
+            <div class="container-fluid">
+                <img id="logo" src="img/codoacodo.png" alt="logo">
+                <a class="navbar-brand" href="#">Conf Bs As</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#conferencia">La conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#oradores">Los oradores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#lugar">El lugar y la fecha</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#conviértete">Conviértete en orador</a>
+                        </li>
+                        <li class="nav-item">
+                        <a id="ticket-nav" class="nav-link" href="#tickets">Comprar tickets</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="conferencia"></div>
+        <div class="container-img">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/ba1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/ba2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/ba3.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <div id="seccion-destino"> 
+              <div class="text-overlay">
+                <h2 class="text-overlay-">Conf Bs As</h2>
+                <p>Bs As llega por primera vez a Argentina. Un evento para compartir con
+                  nuestra comunidad, el conocimiento y experiencia de los expertos que
+                  están creando el futuro de internet. Ven a conocer a miembros del
+                  evento, a otros estudiantes de Codo a Codo y los oradores de primer
+                  nivel que tenemos para ti. Te esperamos!
+                </p>
+                <a href="#conviertete"><button class="quiero">Quiero ser orador</button></a>
+                <a href="#ticket"><button class="comprar">Comprar tickets</button></a>
+              </div>
+            </div>
+    </div>
+    </header>
+    <div id="oradores"></div>
+    <div class="container text-center" id="oradores">
+        <div>
+          <hr>
+          <span>CONOCE A LOS</span>
+          <h3>ORADORES</h3>
+            <div class="row text-center animate__animated animate__bounceInLeft"> 
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+                    <div class="card">
+                        <img src="img/steve.jpg" alt="...">
+                        <div class="card-bottom">
+                            <div class="container-boton">
+                              <span class="javascript">JavaScript</span>
+                              <span class="react">React</span>
+                            </div>
+                          </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Steve Jobs</h5>
+                            <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptatibus perferendis deleniti, totam fuga sequi iste! Facilis explicabo repellat ut similique incidunt? Ullam nobis beatae, corporis facilis veniam magni ratione!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+                    <div class="card">
+                        <img src="img/bill.jpg" alt="...">
+                        <div class="card-body">
+                            <div class="card-bottom">
+                                <div class="container-booton">
+                                  <span class="javascript">JavaScript</span>
+                                  <span class="react">React</span>
+                                </div>
+                              </div>
+                            <h5 class="card-title">Bill Gates </h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptatibus perferendis deleniti, totam fuga sequi iste! Facilis explicabo repellat ut similique incidunt? Ullam nobis beatae, corporis facilis veniam magni ratione!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+                    <div class="card">
+                        <img src="img/ada.jpeg" alt="...">
+                        <div class="card-body">
+                            <div class="card-bottom">
+                                <div class="container-booton">
+                                  <span class="negocios">Negocios</span>
+                                  <span class="startups">StarTups</span>
+                                </div>
+                              </div>
+                            <h5 class="card-title">Ada Lovelace</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptatibus perferendis deleniti, totam fuga sequi iste! Facilis explicabo repellat ut similique incidunt? Ullam nobis beatae, corporis facilis veniam magni ratione!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row" id="row">
+                  <div class="col-md-6">
+                    <img src="img/honolulu.jpg" class="card-img-top" alt="..." id="imagen-lugar" />
+                  </div>
+                  <div class="col-md-6" id="col2">
+                    <div class="text-container">
+                      <h3 class="octubre">BS AS - Octubre</h3>
+                      <span class="texto_span">Buenos Aires es la provincia y localidad más grande del estado Argentino, en los Estados Unidos, Honolulu es la provincia más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad condado consolidada que cubre toda la ciudad (aproximadamente 600km² de superficie).</span>
+                    </div>
+                    <button class="button">Conocé más</button>
+                  </div>
+                </div>
+                <div id="conviértete"></div>
+                <div class="container text-center" id="conviertete" >
+                    <div class="titulo_conviertete">
+                    <span>CONVÍERTETE EN UN </span>
+                      <h3>ORADOR</h3>
+                      <div class="anotate">
+                      <p>Anótate como orador para dar una <span class="underline-dashed"> charla ignite. </span> Cuéntanos de qué quieres hablar!
+                      </p>
+                      </div>
+                    </div>
+                    <div class="container-form">
+                        <div class="row g-3">
+                          <div class="col">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Nombre"
+                              aria-label="First name"
+                            />
+                          </div>
+                          <div class="col">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Apellido"
+                              aria-label="Last name"
+                            />
+                          </div>
+                        </div>
+                        <div class="mb-3">  
+                        <textarea class="form-control" id="form-control" placeholder="Sobre qué quieres hablar?" rows="5"></textarea>
+                          <div class="izquierda">
+                          <p >Recuerda incluir un titulo para tu charla</p>
+                        </div>
+                        <button class="btn btn-success">Enviar</button>
+                        </div>
+                      </div> 
+                      </div>
+                  <div class="container text-center" id="ticket">
+                    <div>
+                        <div class="caards">
+                          <div class="card-tickets" id="cardticket1" >
+                             <div class="card-body-ticket">
+                                <h4 class="card-title-ticket">Estudiantes</h4>
+                                <span class="card-text-ticket">
+                                Tiene un descuento
+                                </span>
+                                <p class="card-ticket-descuento">
+                                  80%
+                                </p>
+                                <p class="documentacion">*Presentar documentación</p>
+                              </div>
+                            </div>
+                            <div class="card-tickets" id="cardticket2">
+                              <div class="card-body-ticket">
+                                <h4 class="card-title-ticket">Trainee</h4>
+                                <span class="card-text-ticket">
+                                  Tiene un descuento
+                                </span>
+                                <p class="card-ticket-descuento">
+                                  50%
+                                </p>
+                                <p class="documentacion">*Presentar documentación</p>
+                              </div>
+                            </div>
+                            <div class="card-tickets" id="cardticket3">
+                              <div class="card-body-ticket">
+                                <h4 class="card-title-ticket">Junior</h4>
+                                <span class="card-text-ticket">
+                                  Tiene un descuento
+                                </span>
+                                <p class="card-ticket-descuento">
+                                  15%
+                                </p>
+                                <p class="documentacion">*Presentar documentación</p>
+                              </div>                             
+                            </div>
+                          </div>
+                        </div>      
+              
+                        <div class="titulo-valor-ticket">
+                          <span>VENTA </span>
+                          <h2>VALOR DE TICKET $200</h2>
+                      </div>
+                      <div class="container form-ticket">
+                          <form class="row g-3">
+                              <div class="col-sm-6">
+                                  <input type="text" class="form-control" id="inputNombre" placeholder="Nombre">
+                              </div>
+                              <div class="col-sm-6">
+                                  <input type="text" class="form-control" id="inputApellido" placeholder="Apellido">
+                              </div>
+                              <div class="col-sm-12">
+                                  <input type="email" class="form-control" id="inputAddress" placeholder="Correo">
+                              </div>
+                              <div class="col-sm-6">
+                                  <label for="inputCantidad" id="label-cantidad" class="form-label">Cantidad</label>
+                                  <input type="text" class="form-control" id="inputCantidad">
+                              </div>
+                              <div class="col-sm-4">
+                                  <label for="inputCategoria" id="label-categoria" class="form-label">Categoría</label>
+                                  <select id="inputCategoria" class="form-select">
+                                      <option selected>Opciones...</option>
+                                      <option>Estudiante</option>
+                                      <option>Trainee</option>
+                                      <option>Junior</option>
+                                  </select>
+                              </div>
+                          </form>
+                      </div>                                         
+                         <div class="col-12">
+                            <div class="container-pagar"><span id="totalAPagar" class="pagar">Total a Pagar: $</span></div>
+                          </div>
+                          <div class="col-12">
+                            <button type="submit" class="btn btn-success2" id="boton-borrar">Borrar</button>
+                            <button type="submit" class="btn btn-success3" id="boton-resumen">Resumen</button>
+                          </div>
+                        </form>
+                        </div>
+                      </div>                     
+                      <footer>
+                        <div class="footer-container">
+                            <div class="footer-section">Preguntas frecuentes </div>
+                            <div class="footer-section">Contáctanos</div>
+                            <div class="footer-section">Prensa</div>
+                            <div class="footer-section">Conferencias</div>
+                            <div class="footer-section">Términos y condiciones</div>
+                            <div class="footer-section">Privacidad</div>
+                            <div class="footer-section">Estudiantes</div>
+                        </div>
+                    </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
